@@ -3,7 +3,7 @@
 # kaprekar_constant.py
 #
 # Constants are 495 for 3 digits and 6174 for 4 digits.
-# E.g. 2060 is 6200 - 0026 = 6174
+# E.g. 2060 is 6200 - 0026 = 6174. Achieved in one interation.
 #
 # Examples of launching the program...
 # $ python kaprekar_constant.py 105
@@ -20,8 +20,8 @@ def main(integer_str):
     """
     Recieve integer as string from command line interface
     Call functions to rearrange in desending and assending orders
-    Call function to subtract descending for assending.
-    Loop is not repeating.
+    Call function to subtract descending from assending.
+    Loop if it's not repeating.
     """
 
     if VERBOSE: print("Initial integer:        {:>8}".format(integer_str))
@@ -148,4 +148,5 @@ if __name__=="__main__":
 """
 Reference: 
 https://en.wikipedia.org/wiki/Kaprekar%27s_routine
+https://en.wikipedia.org/wiki/6174_(number)
 """
